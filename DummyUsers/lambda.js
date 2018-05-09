@@ -12,6 +12,7 @@ exports.handler = function (event, context, callback) {
 	ddb.put({
 		TableName: 'DummyUsers',
 		Item: {
+			'Email': email,
 			'Password': password,
 			'longitude': long,
 			'latitude': latitude
