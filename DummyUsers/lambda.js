@@ -1,7 +1,10 @@
-import firebase from "firebase";
+let firebase = require('firebase');
 let AWS = require('aws-sdk');
+
+
 const ddb = new AWS.DynamoDB.DocumentClient();
 exports.handler = function (event, context, callback) {
+	
 	let email = "andun@adroitlogic.com";
 	// let long = 7.8731;
 	changeCoord = (Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4);
