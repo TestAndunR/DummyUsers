@@ -1,7 +1,7 @@
 // let firebase = require('firebase');
 let AWS = require('aws-sdk');
 
-const fireDb = new firebase.database();
+// const fireDb = new firebase.database();
 const ddb = new AWS.DynamoDB.DocumentClient();
 exports.handler = function (event, context, callback) {
 	
